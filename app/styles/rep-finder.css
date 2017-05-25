@@ -1,0 +1,128 @@
+* {
+  padding: 0px;
+  margin: 0px;
+    box-sizing: border-box;
+}
+#boxy {
+    background-color: #bcdee7;
+}
+p {
+  font-family: 'arial', serif;
+}
+*, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#rep-nav {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+select,
+button {
+  width: 46%;
+  padding: 10px;
+  margin: 5px;
+  border: solid 2px;
+  background-color: white;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  border-radius: 0px;
+}
+
+#nav-style-box {
+  margin: auto;
+  width: 60%;
+}
+.ret-style-box {
+  padding: 20px;
+}
+
+.sel-ret {
+  width: 49%;
+  display: inline-block;
+background-color: white;
+box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
+}
+.info-box{
+  float: right;
+  width: 50%;
+  padding: 15px;
+}
+.bio-pic-box {
+  float: left;
+  width: 50%;
+  padding: 15px;
+  background-color: ;
+  border-right: dashed 2px;
+  border-color: gray;
+}
+ h2, h3, h4, h5 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.bio-pic-box h3 {
+padding-top: 10px;
+}
+
+.bio-pic-box h4 {
+color: red;
+}
+
+.bio-img {
+  border-radius: 50%;
+  width: 70%;
+padding-top: 70%;
+  background-image: url(../assets/cathy-mcmorris-rodgers.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  margin: auto;
+}
+
+.bubble {
+  background-color: ;
+  border-radius: 50%;
+  width: 20%;
+  padding-top: 20%;
+z-index: 100;
+position: static;
+}
+
+#thumbs-up {
+  float: right;
+  background-image: url(../assets/upvote.svg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+#thumbs-down {
+  float: left;
+  background-image: url(../assets/downvote.svg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.nameplate {
+  margin: 10px;
+}
+.writeme {
+background-color: pink;
+  padding: 5px;
+  width: 98%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.score, .letters, .emails {
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+    margin: auto;
+  text-align: center;
+  padding: 5px;
+}

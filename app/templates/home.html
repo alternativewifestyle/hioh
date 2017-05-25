@@ -1,1 +1,38 @@
-<h1>hi-oh!</h1>
+<div id="boxy">
+  <div id="rep-nav">
+    <div id="nav-style-box">
+      <form>
+
+        <select ng-model="selectedRep" ng-options="x for (x,y) in reps">
+  </select>
+
+        <button type="button" id="get-it">Get it, gurl!</button>
+      </form>
+    </div>
+  </div>
+  <div class="ret-style-box" ng-controller="voteCtrl">
+    <div class="sel-ret">
+      <div class="bio-pic-box">
+        <div class="bio-img"></div>
+        <div class="bubble" id="thumbs-up" ng-click="upVote()"></div>
+        <div class="bubble" id="thumbs-down" ng-click="downVote()"></div>
+        <h3 class="nameplate">The actual devil</h3>
+        <h4>Republican</h4>
+        <h5>re-election date</h5>
+      </div>
+      <div class="info-box">
+        <h4>community score</h4>
+        <div class="score">{{count}}</div>
+        <h4>number of letters</h4>
+        <div class="letters">letters.count</div>
+        <h4>number of emails</h4>
+        <div class="emails">emails.count</div>
+
+        <div class="writeme" ng-controller="MainCtrl">
+          <h3>holla @ yo gurl!</h3>
+        </div>
+      </div>
+
+
+    </div>
+  </div>

@@ -2,15 +2,31 @@
 <html>
 
 <html ng-app="hiOh">
+
 <head lang="en">
   <meta charset="UTF-8">
   <title>Hi Oh</title>
   <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/rep-finder.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
 </head>
 
 <body>
 
-  <ui-view></ui-view>
+  <div class="logo">
+    <h1>Holla @ Yo Gurl</h1></div>
+  <nav class="navbar">
+    <div class="nav-overlay">
+      <ng-include src="'templates/navigation-items.html'"></ng-include>
+  </nav>
+<ui-view></ui-view>
+  <footer>
+    <div class="nav-overlay">
+      <ng-include src="'templates/navigation-items.html'"></ng-include>
+  </footer>
+
 
 
   <!-- Angular -->

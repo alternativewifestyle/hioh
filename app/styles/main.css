@@ -1,0 +1,102 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+*, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Six+Caps');
+
+html {
+  height: 100%;
+  /* makes sure our HTML takes up 100% of the browser window */
+  font-size: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 5%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.logo {
+  height: 150px;
+  background-color: black;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+.logo h1 {
+  text-align: center;
+  padding-top: 55px;
+}
+
+nav {
+  height: 55px;
+  background-color: pink;
+  background-image: url(../assets/peonies.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  font-family: 'Oswald', sans-serif;
+text-transform: uppercase;
+}
+
+.nav-overlay ul {
+    list-style-type: none;
+    padding: 10px;
+
+  }
+.nav-overlay li {
+    display: inline;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: right;
+    margin-right: 5px;
+    margin-top: 0px;
+}
+.nav-overlay {
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 100%;
+  height: 100%;
+}
+
+#content-block {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+footer {
+  height: 100px;
+  background-color: black;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+/* Medium and small screens (640px)
+ @media (min-width: 640px) {
+        html { font-size: 112%; }
+
+ }
+
+ /* Large screens (1024px)
+ @media (min-width: 1024px) {
+   html { font-size: 120%; }
+ }
+
+.clearfix::before,
+.clearfix::after {
+   content: " ";
+   display: table;
+}
+
+.clearfix::after {
+   clear: both;
+}*/
