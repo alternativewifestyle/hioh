@@ -9,11 +9,9 @@
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Six+Caps');
 
 html {
   height: 100%;
-  /* makes sure our HTML takes up 100% of the browser window */
   font-size: 100%;
 }
 
@@ -78,6 +76,20 @@ footer {
   color: white;
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
+}
+
+#senseat1, #senseat2{
+  width: 40%;
+  float: left;
+  display: inline;
+  border: solid;
+  margin: 2%;
+  padding: 5px;
+  text-align: center;
+}
+
+#house {
+  clear: both;
 }
 
 /* Medium and small screens (640px)
