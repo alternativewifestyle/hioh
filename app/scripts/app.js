@@ -39,13 +39,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
     $stateProvider
 
-        // HOME STATES AND NESTED VIEWS ========================================
         .state('home', {
             url: '/home',
             templateUrl: 'home.html'
         })
 
-        // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
         .state('repfinder', {
           url: '/repfinder',
           templateUrl: 'rep-finder.html'
