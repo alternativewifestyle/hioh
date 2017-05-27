@@ -1,4 +1,6 @@
-var app = angular.module("hioh", ['routerApp']);
+var app = angular.module("hioh", ['routerApp', 'letterWriter']);
+
+//this is the repfinder
 app.controller("repCtrl", function($scope) {
   $scope.states = [
     {
@@ -32,9 +34,8 @@ app.controller("repCtrl", function($scope) {
   ];
 });
 
-
+//this is all the routing
 var routerApp = angular.module('routerApp', ['ui.router']);
-
 app.config(function($stateProvider, $urlRouterProvider) {
 
     $stateProvider
@@ -47,6 +48,19 @@ app.config(function($stateProvider, $urlRouterProvider) {
         .state('repfinder', {
           url: '/repfinder',
           templateUrl: 'rep-finder.html'
-        });
+        })
 
+        .state('letter', {
+          url: '/letter',
+          templateUrl: 'letter.html'
+        })
+
+});
+
+//this is the letter-writer
+var lttrApp = angular.module('letterWriter', []);
+
+//date magic!
+app.controller('dateCtrl', function($scope){
+$scope.today = new Date();
 });

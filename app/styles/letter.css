@@ -1,0 +1,44 @@
+div {
+box-sizing: border-box;
+}
+.tab {
+  border: solid;
+  width: 50%;
+  display: inline;
+  padding: 10px;
+}
+#this {
+  background-color: orange;
+}
+#letter-writer {
+  width: 50%;
+  float: left;
+  padding: 10px;
+}
+
+#letter-writer-input {
+  border: solid;
+padding: 20px;
+  margin: 10px;
+}
+
+#letter-output {
+  width: 50%;
+  float: right;
+  border: solid;
+  padding: 40px;
+}
+.date {
+  text-align: right;
+  padding-right: 20px;
+    text-transform: capitalize;
+}
+input {
+  width: 100%;
+}
+
+#sub {
+text-align: center;  font-weight: bold;
+  text-decoration: underline;
+    text-transform: capitalize;
+}

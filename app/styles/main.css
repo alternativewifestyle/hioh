@@ -71,6 +71,7 @@ text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.8);
 }
 footer {
+  clear:both;
   height: 100px;
   background-color: black;
   color: white;
