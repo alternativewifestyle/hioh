@@ -46,11 +46,10 @@ select {
 }
 .senators {
   width: 100%;
-  background-color: orange;
 }
 
 #senseat1, #senseat2{
-  background-color: #ff7fcf;
+  background-color: lightblue;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
   width: 45%;
   margin: 2%;
@@ -63,20 +62,48 @@ select {
 #senseat2 {
   float: right;
 }
-.bio-img-container {
+.bio-left-container {
   width: 49%;
   float: left;
+  background-color: ;
 }
 .bio-details-container {
   width: 49%;
-  background-color: orange;
+  background-color: ;
   float: right;
+  border-left: dashed 2px gray;
+  padding: 4%;
 }
 .bio-pic-box {
-  width: 100%;
-  padding-top: 100%;
+  width: 90%;
+  padding-top: 90%;
   border-radius: 50%;
   background-color: red;
   background-size: cover;
   background-repeat: no-repeat;
+  margin: auto;
+  margin-top: 20px;
+}
+.nameplate {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  margin: 10px;
+  clear: both;
+}
+
+.voteicon {
+  width: 20%;
+  display: inline;
+  margin-top: -20%;
+  margin-left: 5%;
+  margin-right: 5%;
+  z-index: 100;
+}
+
+#upvote {
+  float: right;
+}
+#downvote {
+  float: left;
 }

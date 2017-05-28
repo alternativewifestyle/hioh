@@ -6,6 +6,7 @@ app.controller("repCtrl", function($scope) {
   $scope.states = [
     {
       state: "AL",
+      longname: "Alabama",
       sen: {
         seat1: {
           name: "Richard Shelby",

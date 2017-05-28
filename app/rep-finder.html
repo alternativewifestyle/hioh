@@ -6,17 +6,17 @@
     </div>
   </div>
 
-  <h2>{{selectedState.state}}</h2>
+  <h2>{{selectedState.longname}}</h2>
   <h3> United States Senators</h3>
   <div class="senators">
     <div id="senseat1">
-      <div class="bio-img-container">
+      <div class="bio-left-container">
         <div class="bio-pic-box" ng-style="{'background-image': 'url(' + selectedState.sen.seat1.img + ')'}"></div>
-        <h3>{{selectedState.sen.seat1.name}}</h3>
+<img class="voteicon" id="upvote" src="assets/upvote.svg"><img class="voteicon" id="downvote" src="assets/downvote.svg">
+        <h3 class="nameplate">{{selectedState.sen.seat1.name}}</h3>
+        <h4>{{selectedState.sen.seat1.party}}</h4>
 </div>
       <div class="bio-details-container">
-
-      <p>{{selectedState.sen.seat1.party}}</p>
       <p>{{selectedState.sen.seat1.DOB}}</p>
       <p>{{selectedState.sen.seat1.in}} - {{selectedState.sen.seat1.out}}</p>
      <p>{{selectedState.sen.seat1.email}}</p>
@@ -25,12 +25,11 @@
       <p>{{selectedState.sen.seat1.phone}}</p>
 
   </div>
-      <button>write a letter</button>
     </div>
 
 
     <div id="senseat2">
-      <div class="bio-img-container">
+      <div class="bio-left-container">
         <div class="bio-pic-box" ng-style="{'background-image': 'url(' + selectedState.sen.seat2.img + ')'}"></div>
 <h3>{{selectedState.sen.seat2.name}}</h3>
       </div>
@@ -45,7 +44,6 @@
       <p>{{selectedState.sen.seat2.mailing}}</p>
       <p>{{selectedState.sen.seat2.phone}}</p>
     </div>
-      <button>write a letter</button>
     </div>
   </div>
 
