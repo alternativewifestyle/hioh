@@ -66,7 +66,6 @@ select {
 .bio-img-container {
   width: 49%;
   float: left;
-  background-color: green;
 }
 .bio-details-container {
   width: 49%;
@@ -75,7 +74,9 @@ select {
 }
 .bio-pic-box {
   width: 100%;
-  padding-top: 90%;
+  padding-top: 100%;
   border-radius: 50%;
   background-color: red;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

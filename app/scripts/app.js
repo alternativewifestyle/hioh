@@ -16,7 +16,8 @@ app.controller("repCtrl", function($scope) {
           email: "Sen Shelby does not have a direct email address. You can find his contanct form on his website",
           website: "http://www.shelby.senate.gov/",
           mailing: "304 Russell Senate Office Building Washington DC 20510",
-          phone: "(202) 224-5744"
+          phone: "(202) 224-5744",
+          img: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Richard_Shelby%2C_official_portrait%2C_112th_Congress_crop.jpg"
         },
         seat2: {
           name: "Luther Strange",
@@ -27,7 +28,8 @@ app.controller("repCtrl", function($scope) {
           email: "Sen Strange does not have a direct email address. You can find his contanct form on his website",
           website: "https://www.strange.senate.gov/content/contact-senator",
           mailing: "G-12 Dirksen Senate Office Building Washington DC 20510",
-          phone: "(202) 224-4124"
+          phone: "(202) 224-4124",
+          img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Luther_Strange_official_portrait.jpg/467px-Luther_Strange_official_portrait.jpg"
         },
       },
       house: 9
