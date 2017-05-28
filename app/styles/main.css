@@ -79,20 +79,6 @@ footer {
   text-transform: uppercase;
 }
 
-#senseat1, #senseat2{
-  width: 40%;
-  float: left;
-  display: inline;
-  border: solid;
-  margin: 2%;
-  padding: 5px;
-  text-align: center;
-}
-
-#house {
-  clear: both;
-}
-
 /* Medium and small screens (640px)
  @media (min-width: 640px) {
         html { font-size: 112%; }

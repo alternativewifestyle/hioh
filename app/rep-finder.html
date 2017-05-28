@@ -1,39 +1,52 @@
-
 <div id="boxy" ng-app="hioh" ng-controller="repCtrl">
   <div id="rep-nav">
     <div id="nav-style-box">
-      <form>
-
-        <select ng-model="selectedRep" ng-options="x for (x,y) in reps">
-  </select>
-
-        <button type="button" id="get-it">Get it, gurl!</button>
-      </form>
+<h3>Choose a state to see your legislators</h3>
+        <select id="selectstate" ng-model="selectedState" ng-options="x.state for x in states"></select>
     </div>
   </div>
-  <div class="ret-style-box" ng-controller="voteCtrl">
-    <div class="sel-ret">
-      <div class="bio-pic-box">
-        <div class="bio-img"></div>
-        <div class="bubble" id="thumbs-up" ng-click="upVote()"></div>
-        <div class="bubble" id="thumbs-down" ng-click="downVote()"></div>
-        <h3 class="nameplate">The actual devil</h3>
-        <h4>Republican</h4>
-        <h5>re-election date</h5>
+
+  <h2>{{selectedState.state}}</h2>
+  <h3> United States Senators</h3>
+  <div class="senators">
+    <div id="senseat1">
+      <div class="bio-img-container">
+        <div class="bio-pic-box">img</div>
+        <h3>{{selectedState.sen.seat1.name}}</h3>
+</div>
+      <div class="bio-details-container">
+
+      <p>{{selectedState.sen.seat1.party}}</p>
+      <p>{{selectedState.sen.seat1.DOB}}</p>
+      <p>{{selectedState.sen.seat1.in}} - {{selectedState.sen.seat1.out}}</p>
+     <p>{{selectedState.sen.seat1.email}}</p>
+     <p><a ng-href="{{selectedState.sen.seat1.website}}">Website</a></p>
+      <p>{{selectedState.sen.seat1.mailing}}</p>
+      <p>{{selectedState.sen.seat1.phone}}</p>
+
+  </div>
+      <button>write a letter</button>
+    </div>
+
+
+    <div id="senseat2">
+      <div class="bio-img-container">
+        <div class="bio-pic-box">img</div>
+<h3>{{selectedState.sen.seat2.name}}</h3>
       </div>
-      <div class="info-box">
-        <h4>community score</h4>
-        <div class="score">{{count}}</div>
-        <h4>number of letters</h4>
-        <div class="letters">letters.count</div>
-        <h4>number of emails</h4>
-        <div class="emails">emails.count</div>
-
-        <div class="writeme" ng-controller="MainCtrl">
-          <h3>holla @ yo gurl!</h3>
-        </div>
-      </div>
+      <div class="bio-details-container">
 
 
+      <p>{{selectedState.sen.seat2.party}}</p>
+      <p>{{selectedState.sen.seat2.DOB}}</p>
+      <p>{{selectedState.sen.seat2.in}} - {{selectedState.sen.seat2.out}}</p>
+     <p>{{selectedState.sen.seat2.email}}</p>
+     <p><a ng-href="{{selectedState.sen.seat2.website}}">Website</a></p>
+      <p>{{selectedState.sen.seat2.mailing}}</p>
+      <p>{{selectedState.sen.seat2.phone}}</p>
+    </div>
+      <button>write a letter</button>
     </div>
   </div>
+
+</div>

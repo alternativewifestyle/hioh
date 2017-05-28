@@ -1,6 +1,7 @@
-var app = angular.module("hioh", ['routerApp', 'letterWriter']);
+var app = angular.module("hioh", ['routerApp', 'letterWriter', 'repSelector']);
 
 //this is the repfinder
+var app = angular.module("repSelector", []);
 app.controller("repCtrl", function($scope) {
   $scope.states = [
     {
@@ -64,3 +65,5 @@ var lttrApp = angular.module('letterWriter', []);
 app.controller('dateCtrl', function($scope){
 $scope.today = new Date();
 });
+
+//download as pdf

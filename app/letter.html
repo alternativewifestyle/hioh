@@ -1,9 +1,9 @@
-<div id="letter-writer">
-
-
+<div id="letter-intro">
   <h2><center>Give 'em hell!<center></h2>
     <p><center>No need to worry about salutations or format, H@YG will take care of that!</center></p>
-
+</div>
+<div id="container">
+<div id="letter-writer">
 <form>
   <label>Letter Subject</label><br>
     <input type="text" ng-model="subject" required />
@@ -17,7 +17,8 @@
      <input type="text" ng-model="userln"  required/>
    <label>Email</label>
      <input type="text" ng-model="useremail"  required/>
-
+     <label>Phone</label>
+       <input type="text" ng-model="userphone"  required/>
     </form>
     </div>
 
@@ -26,19 +27,23 @@
 <div id="letter-output">
   <p class="date" ng-controller="dateCtrl">{{today | date}}</p>
 
-  <p>The Honorable {{torep.first}} {{torep.last}}</br>
-    {{torep.street}}</br>
-  {{torep.city}}, {{torep.state}} {{torep.zip}}</p>
+  <p id="salutation">The Honorable This Guy</br>
+    1234 street</br>
+  City, State ZIP</p>
 
   <p id="sub">{{subject}}</p>
 
-  <p id="copy"> {{bodycopy}}</p>
+  <p id="copy">{{bodycopy}}</p>
 
   <p>Sincerely, <br>
 //signature// <br>
-{{userfn}} {{userln}}<br>
-{{userstreet}}<br>
-{{usercity}}, {{userstate}} {{userzip}}<br>
-Phone: {{userphone}}<br>
-Email: {{useremail}}
+
+<p ng-show="userfn">{{userfn}} {{userln}}</p>
+<p ng-show="userstreet">{{userstreet}}<br>
+{{usercity}}, {{userstate}} {{userzip}}</p>
+<p ng-show="userphone">{{userphone}}</p>
+<p ng-show="useremail">{{useremail}}</p>
+</div>
+<div id="editor"></div>
+<button id="download">download letter as pdf</button>
 </div>

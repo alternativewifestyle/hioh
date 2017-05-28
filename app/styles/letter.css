@@ -25,8 +25,9 @@ padding: 20px;
 #letter-output {
   width: 50%;
   float: right;
-  border: solid;
   padding: 40px;
+  margin-bottom: 20px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
 }
 .date {
   text-align: right;
@@ -41,4 +42,26 @@ input {
 text-align: center;  font-weight: bold;
   text-decoration: underline;
     text-transform: capitalize;
+}
+
+#letter-intro {
+  padding: 10px;
+}
+
+#salutation {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#container {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+#download {
+  background-color: #ff7fcf;
+  clear: both;
+  padding: 10px;
+  width: 50%;
+  margin: auto;
+  display: block;
 }
